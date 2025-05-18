@@ -1,0 +1,56 @@
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+
+/* Header controls */
+header.controls {
+  display: flex;
+  gap: 1em;
+  align-items: baseline;
+  margin-bottom: 0.5em;
+}
+
+header.controls label {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#time-slider {
+  display: block;
+  margin-top: 0.25em;
+}
+
+#selected-time,
+#any-time {
+  display: block;
+  font-size: 0.9em;
+}
+
+#any-time {
+  font-style: italic;
+  color: #666;
+}
+
+/* Legend styling */
+.legend {
+  display: flex;
+  gap: 1px;
+  margin-block: 1em;
+  border: 1px solid #ccc;
+}
+
+.legend > div {
+  flex: 1;
+  padding: 0.5em 1em;
+  text-align: center;
+  font-size: 0.9em;
+  color: #fff;
+}
